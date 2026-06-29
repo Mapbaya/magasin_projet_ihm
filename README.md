@@ -1,5 +1,8 @@
 # SAÉ Graphes-IHM : Optimisation des parcours en supermarché
 
+> **EN:** BUT1 project — two Python GUI apps to lay out supermarket products on a floor plan and compute optimal shopping paths.  
+> **FR:** Projet BUT1 — deux applications Python pour positionner des produits en magasin et calculer un parcours de courses optimal.
+
 Ce projet a été développé dans le cadre de la SAÉ IHM du BUT1 Informatique à l'IUT du Littoral Côte d'Opale.
 
 ## Contexte
@@ -35,9 +38,13 @@ Cette application permet de créer et gérer des projets de positionnement de pr
 - Gestion d'erreurs avec notifications utilisateur
 - Notice d'utilisation intégrée
 
-### Application 2 : Calcul de parcours optimal (?)
+### Application 2 : Calcul de parcours optimal (App2)
 
-Cette application doit calculer le chemin le plus efficace pour collecter une liste de produits donnée.
+Application de liste de courses avec calcul de parcours (`App2/`). Lancement :
+
+```bash
+python App2/mainApp2.py
+```
 
 ## Architecture technique
 
@@ -55,10 +62,19 @@ Le projet respecte l'architecture MVC (Modèle-Vue-Contrôleur) imposée dans le
 - Bibliothèques des modules R2-02 et R2-07
 
 ### Lancement
+
+**Application 1** (positionnement des produits) :
+
 ```bash
 git clone https://github.com/Mapbaya/magasin_projet_ihm.git
 cd magasin_projet_ihm
-python app1/main.py
+python App1/main.py
+```
+
+**Application 2** (liste de courses et parcours) :
+
+```bash
+python App2/mainApp2.py
 ```
 
 L'application 1 dispose d'une notice d'utilisation intégrée accessible depuis l'interface.
@@ -86,9 +102,9 @@ L'application 1 a été testée avec :
 - Fonctionnalités bonus ajoutées
 - Tests effectués et validés
 
-**Application 2** : ?
-- Analyse des algorithmes de parcours en cours
-- Développement prévu dans les prochaines séances
+**Application 2** : ✅ Livrable (liste de courses, algorithme de parcours)
+- Code dans `App2/`
+- Améliorations possibles (voir `suiviTravail.md`)
 
 ## Notes techniques
 
